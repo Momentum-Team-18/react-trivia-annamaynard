@@ -16,7 +16,7 @@ a {
 }
 
 #root {
-  max-width: 1280px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -27,10 +27,14 @@ a {
   color: black;
 }
 
+
+p{
+    border: 2px solid black;
+    font-size: 30px;
+    max-width: 150;
+}
 .categoryCard {
-  /* border: 2px black solid; */
   justify-content: left;
-  max-width: 400px;
   justify-content: left;
   padding-right: 30px;
 }
@@ -39,9 +43,8 @@ a {
   font-size: 30px;
   padding: 10px 20px;
   margin: 10px;
-  justify-content: left;
+  justify-content: center;
   background-color: white;
-  justify-content: left;
   max-width: 350px;
   min-width: 350px;
 }
@@ -59,5 +62,6 @@ a {
   font-size: 15px;
   padding: 10px 20px;
   margin: 10px;
-  background-color: lightgray;
+  background-color: rgb(238, 237, 237);
+
 }

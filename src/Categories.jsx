@@ -1,14 +1,6 @@
-//ON THIS PAGE 
-// -list of categories -- that link to 10 question quizes in that category 
-// - difficulty levels -- easy / medium / difficult -- appear when the category is selected --> quiz
-    // components for Level and Quiz
-// - option for randomized categories 
-
-/* eslint-disable react/prop-types */
-
-
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import he from 'he'
 
 
 const Categories = ({setSelectedCategory}) => {

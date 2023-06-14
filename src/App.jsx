@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <div>
-      {selectedCategory ? <Quiz categoryID={selectedCategory} categories={Categories} /> : <Categories setSelectedCategory={setSelectedCategory} />}
+      {selectedCategory ? <Quiz categoryID={selectedCategory} categories={Categories} setSelectedCategory={setSelectedCategory} /> : <Categories setSelectedCategory={setSelectedCategory} />}
     </div>
   );
 }
