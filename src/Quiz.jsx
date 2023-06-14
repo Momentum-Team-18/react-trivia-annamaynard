@@ -80,11 +80,11 @@ const Quiz = ({ categoryID, categories, setSelectedCategory }) => {
           <div className="content">
             {showAnswer && (
               <p
-                className={`answer ${
+                className={
                   selectedAnswer === questions[currentQuestion].correct_answer
-                    ? "correct"
-                    : "incorrect"
-                }`}
+                    ? "correctAnswer"
+                    : "incorrectAnswer"
+                }
               >
                 {selectedAnswer === questions[currentQuestion].correct_answer
                   ? "Correct!"

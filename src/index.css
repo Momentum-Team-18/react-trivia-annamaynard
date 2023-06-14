@@ -65,3 +65,11 @@ p{
   background-color: rgb(238, 237, 237);
 
 }
+
+.correctAnswer{
+    background-color: rgb(225, 255, 232);
+}
+
+.incorrectAnswer {
+    background-color: rgb(255, 195, 195);
+}
