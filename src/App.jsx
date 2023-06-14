@@ -5,7 +5,7 @@ import './App.css';
 import Quiz from './Quiz';
 
 
-const App = ({categoryId}) => {
+const App = () => {
 
 const [selectedCategory, setSelectedCategory] = useState('')
     // if(selectedCategory){return <Quiz />}
@@ -14,7 +14,7 @@ const [selectedCategory, setSelectedCategory] = useState('')
 
   return (
     <div>
-       {selectedCategory ? < Quiz id={categoryId} /> : < Categories /> } 
+       {selectedCategory ? < Quiz id={category} /> : < Categories /> } 
     </div>
   );
   }

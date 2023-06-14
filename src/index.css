@@ -5,10 +5,50 @@
   color: black;
 }
 
-h1{
-    font-size: 50px;
+h1 {
+  font-size: 50px;
+  border: 2px solid;
+  padding: 20px;
 }
-a{
-    text-decoration: none;
-    color:black;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.categoryCard {
+  border: 2px black solid;
+  justify-content: left;
+  max-width: 400px;
+  justify-content: left;
+  padding-right: 30px;
+}
+
+.catButton {
+  font-size: 30px;
+  padding: 10px 20px;
+  justify-content: left;
+  background-color: white;
+  justify-content: left;
+  max-width: 350px;
+  min-width: 350px;
+}
+
+.diffButton {
+  font-size: 14px;
+  padding: 8px 12px;
+  background-color: white;
+  justify-content: center;
+  margin: 10px;
 }
