@@ -28,7 +28,7 @@ a {
 }
 
 .categoryCard {
-  border: 2px black solid;
+  /* border: 2px black solid; */
   justify-content: left;
   max-width: 400px;
   justify-content: left;
@@ -38,6 +38,7 @@ a {
 .catButton {
   font-size: 30px;
   padding: 10px 20px;
+  margin: 10px;
   justify-content: left;
   background-color: white;
   justify-content: left;
@@ -45,10 +46,4 @@ a {
   min-width: 350px;
 }
 
-.diffButton {
-  font-size: 14px;
-  padding: 8px 12px;
-  background-color: white;
-  justify-content: center;
-  margin: 10px;
-}
+

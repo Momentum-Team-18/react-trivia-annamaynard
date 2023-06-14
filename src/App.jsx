@@ -1,22 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Categories from './Categories' ;
-import './App.css';
+import Categories from './Categories';
 import Quiz from './Quiz';
-import he from 'he';
 
 const App = () => {
-
-const [selectedCategory, setSelectedCategory] = useState('')
-    // if(selectedCategory){return <Quiz />}
-
-    // const [currentScore, setCurrentScore] = useState(0);
+  const [selectedCategory, setSelectedCategory] = useState('');
 
   return (
     <div>
-       {selectedCategory ? < Quiz id={category} /> : < Categories /> } 
+      {selectedCategory ? <Quiz categoryID={selectedCategory} categories={Categories} /> : <Categories setSelectedCategory={setSelectedCategory} />}
     </div>
   );
-  }
+}
 
 export default App;
