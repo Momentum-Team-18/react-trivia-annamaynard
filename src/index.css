@@ -47,3 +47,17 @@ a {
 }
 
 
+.button {
+  font-size: 30px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: white;
+    
+}
+
+.actionButton{
+  font-size: 15px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: lightgray;
+}
