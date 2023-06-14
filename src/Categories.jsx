@@ -17,36 +17,28 @@ const Categories = () => {
         setCategoryId(id)
         console.log('Hi ,', id)
     }
-
-    const handleCategoryLevel = (level) => {
-        setDifficulty(level);
-        console.log('Difficulty:', level);
-      };
   
     useEffect(() => {
-      axios.get('https://opentdb.com/api_category.php')
+      const URL = 'https://opentdb.com/api_category.php'
+      axios.get(URL)
         .then(response => {
           setCategories(response.data.trivia_categories);
         })
     }, []);
   
     useEffect(()=>{
-        axios.get('https://opentdb.com/api.php?amount=10&category&difficulty')
-        .then(response => {
-            setDifficulty(response.data.triva_categories.difficulty)
+        const catUrl = 'https://opentdb.com/api.php?amount=10&category=${categoryID}'
+        useEffect(() => {
+            axios.get(catUrl).then((response) => setQuestions(response.data.results))}, [categoryID])
         })
     
     })
     return (
         <div>
-          <h1>Categories</h1>
+          <h1>Trivia</h1>
           <div className="categoryCard">
             {categories.map(category => (
-              <div key={category.id}>
-                  <ul>
-                    <button className="catButton"onClick={() => handleCategoryId(category.id)}>{category.name}</button>
-                  </ul>
-              </div>
+              <div key={category.id}></div>
             ))}
             </div>
         </div>
@@ -56,11 +48,6 @@ const Categories = () => {
   
   
   
-  
-    
-    // <button className="diffButton" onClick={() => handleCategoryLevel({category.difficulty})}>EASY</button>
-    // <button className="diffButton" onClick={() => handleCategoryLevel('medium')}>MEDIUM</button>
-    // <button className="diffButton" onClick={() => handleCategoryLevel('difficult')}>DIFFICULT</button>
 
     export default Categories;
 
