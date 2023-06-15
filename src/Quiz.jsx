@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Category from "./Categories";
 import he from "he";
 import arrayShuffle from "array-shuffle";
 
